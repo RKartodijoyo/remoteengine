@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REMOTE ENGINE CAT</title>
+<!-- Include file Bootstrap disini -->
+<!-- CSS -->
+<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="css/template-homepage.css">
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- Include tag META disini -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="#" class="d-inline-block align-top" alt="">
+    REMOTE ENGINE ALARM
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> REFRESH<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" onclick="reloadPage();"><i class="fa fa-home" aria-hidden="true" ></i> SILENCE</a>
+      </li>
+<li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> RESET<span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+    </form>
+  </div>
+</nav>
+
+
+<!-- POST-GRID -->
+<div id="hp-post"> <!-- Homepage post (hp-post) -->
+    <div class="row justify-content-around m-1">
+        <div class="hp-grid-post col-md border border-secondary m-2">
+            <h2><div class="hp-judul-post text-capitalize">LOPSS</div></h2>
+            <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage" onclick="changeImage()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+            <h2><div class="hp-judul-post text-capitalize">OVERSPEED</div></h2>
+            <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage2" onclick="changeImage2()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+               <h2><div class="hp-judul-post text-capitalize">HIGH DIFERENTIAL OIL</div></h2>
+            <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage3" onclick="changeImage3()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+   <h2><div class="hp-judul-post text-capitalize">PARTICLE DETECTOR</div></h2>
+            <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage4" onclick="changeImage4()">
+
+        </div>
+    </div>
+    <div class="row justify-content-around m-1">
+        <div class="hp-grid-post col-md border border-secondary m-2">
+   <h2><div class="hp-judul-post text-capitalize">LOPSS</div></h2>
+             <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage5" onclick="changeImage5()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+   <h2><div class="hp-judul-post text-capitalize">LOPSS</div></h2>
+             <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage6" onclick="changeImage6()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+   <h2><div class="hp-judul-post text-capitalize">LOPSS</div></h2>
+             <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage7" onclick="changeImage7()">
+
+        </div>
+        <div class="hp-grid-post col-md border border-secondary m-2">
+   <h2><div class="hp-judul-post text-capitalize">LOPSS</div></h2>
+             <img src="hitam.png" class="mx-auto d-block" alt="Tumbhnail" id="myImage8" onclick="changeImage8()">
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("merah")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "merah.png";
+  }
+
+}
+function changeImage2() {
+  var image = document.getElementById('myImage2');
+  if (image.src.match("merah")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "merah.png";
+  }
+}
+
+function changeImage3() {
+  var image = document.getElementById('myImage3');
+
+  if (image.src.match("merah")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "merah.png";
+  }
+}
+function changeImage4() {
+  var image = document.getElementById('myImage4');
+  if (image.src.match("merah")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "merah.png";
+  }
+}
+function changeImage5() {
+  var image = document.getElementById('myImage5');
+  if (image.src.match("kuning")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "kuning.png";
+  }
+}
+function changeImage6() {
+  var image = document.getElementById('myImage6');
+  if (image.src.match("kuning")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "kuning.png";
+  }
+}
+function changeImage7() {
+  var image = document.getElementById('myImage7');
+  if (image.src.match("kuning")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "kuning.png";
+  }
+}
+function changeImage8() {
+  var image = document.getElementById('myImage8');
+  if (image.src.match("kuning")) {
+    image.src = "hitam.png";
+  } else {
+    image.src = "kuning.png";
+  }
+}
+</script>
+<!-- Footer -->
+<footer class="bg-dark">
+    <span class="text-light"><center>Powered by @ <a href="http://github.com/rkartodijoyo" target="_blank">Rizaldi</a> 2019</center></span>
+
+</footer>
+</div>
+</body>
+</html>
